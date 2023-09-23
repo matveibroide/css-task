@@ -21,6 +21,11 @@ body {
     width: 50%;
 }
 
+.logo {
+    height: 30px;
+    padding: 5%;
+}
+
 .img {
     width: 100%;
     height: 100%;
@@ -44,6 +49,7 @@ p {
 .links {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .links i {
@@ -52,7 +58,7 @@ p {
 }
 
 .links a {
-    
+    text-decoration: none;
     padding: 2%;
     color: #ffffff;
     width: 40%;
@@ -81,6 +87,7 @@ p {
     width: fit-content;
     text-align: center;
     padding: 0 2% 0 2%;
+    font-size: 12px;
 }
 
 .bar {
@@ -128,10 +135,6 @@ input:hover {
     
 }
 
-input:focus {
-
-    
-}
 
 .investor-info {
 
@@ -142,20 +145,13 @@ input:focus {
 
 }
 
-.investor-info input {
-    margin: 5% 0;
-    
-}
-
-
-.about-input {
+.investor-info .about-input {
     color: #AFAFAF;
-    border: 1px solid grey;
-
-}
-
-.about-input :hover {
-    
+    border: none;
+    padding: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    box-shadow: 5px 5px 10px 2px rgba(217, 214, 214, 0.8);
     
 }
 
@@ -167,6 +163,8 @@ input:focus {
     margin: 0 auto;
     color: #ffffff;
     border-radius: 5px;
+    margin-top: 10%;
+    margin-bottom: 10%;
 
 }
 
@@ -177,6 +175,22 @@ input:focus {
 
 }
 
+.agreement-wrapper {
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.agreement-wrapper input {
+
+    margin: 0 10px 0 0;
+    width: fit-content;
+}
+
+.agreement-wrapper a {
+    color: #3698FB;
+}
+
 .checkbox-wrapper input {
     width: fit-content;
     margin: 0 10px 0 0;
@@ -184,18 +198,15 @@ input:focus {
     height: 1.3em;
     background-color: white;
     border-radius: 50%;
-    vertical-align: middle;
     border: 1px solid #96A5B1;
     appearance: none;
-    -webkit-appearance: none;
-    outline: none;
     cursor: pointer;
+    
 }
 
-.checkbox-wrapper input :checked {
+input[type=checkbox]:checked {
 
-    border:3px solid #3698FB;
-
+    outline: 2px solid #3698FB;
 }
 
 
